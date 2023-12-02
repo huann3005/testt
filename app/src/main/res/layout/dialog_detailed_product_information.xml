@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/chicken1"
+        android:scaleType="fitXY"
+        android:id="@+id/img_detalied"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_margin="5dp"
+        />
+        <TextView
+            android:id="@+id/txt_name_detalied"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_detalied"
+            android:text="Gà rán"
+            android:textColor="@color/black"
+
+            android:textSize="27sp" />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_detalied"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/bgr_btn_2dp"
+                android:gravity="center"
+                android:src="@drawable/baseline_horizontal_rule_24" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:background="@drawable/bgr_btn_2dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/bgr_btn_2dp"
+                android:gravity="center"
+                android:src="@drawable/baseline_add_24" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_content_detailed"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_below="@+id/txt_name_detalied"
+            android:text="Sản phẩm ngon, nguyên liệu tươi ngon đảm bảo chất lượng và sức khỏe cho người tiêu dùng" />
+
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:layout_marginHorizontal="15dp"
+           android:layout_width="match_parent"
+           android:layout_below="@+id/txt_content_detailed"
+           android:id="@+id/mm"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Đã bán : 100SP"
+               android:textColor="#2196F3"
+               android:textSize="14sp" />
+           <View
+               android:layout_marginLeft="10dp"
+               android:layout_width="2dp"
+               android:layout_height="20dp"
+               android:background="#cccc"/>
+           <TextView
+               android:layout_marginLeft="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Lượt thích: 100Like"
+               android:textColor="#2196F3"
+               android:textSize="14sp" />
+           <View
+               android:layout_marginLeft="10dp"
+               android:layout_width="2dp"
+               android:layout_height="20dp"
+               android:background="#cccc"/>
+           <TextView
+               android:layout_marginLeft="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Còn hàng"
+               android:textColor="@color/main"
+               android:textSize="16sp" />
+       </LinearLayout>
+
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/mm1"
+            android:layout_marginHorizontal="15dp"
+            android:layout_below="@id/mm"
+            android:background="@color/black" />
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_below="@id/mm1"
+            android:background="@color/black" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đánh giá của khách hàng"
+            android:layout_below="@id/mm1"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <RelativeLayout
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="45dp">
+            <TextView
+                android:id="@+id/cc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá tiền : "
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toEndOf="@+id/cc"
+                android:text="330.000đ"
+                android:textColor="@color/main"
+                android:textSize="24sp" />
+
+            <Button
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main"
+                android:paddingHorizontal="8dp"
+                android:text="Thêm vào giỏ hàng"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

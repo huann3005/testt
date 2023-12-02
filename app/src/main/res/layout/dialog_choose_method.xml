@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="15dp"
+    android:elevation="10dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:text="Chọn Phương Thức"
+        android:background="@color/main"
+        android:gravity="center"
+        android:textSize="21sp"
+        />
+    <TextView
+        android:id="@+id/tvBank"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:text="Chuyển khoản"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#dadada"
+        />
+    <TextView
+        android:id="@+id/tvCash"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:text="Thanh toán bằng tiền mặt"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#dadada"
+        />
+    <TextView
+        android:id="@+id/tvZaloPay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Thanh toán qua ZaloPay"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

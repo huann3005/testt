@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:id="@+id/iv_update_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        >
+
+        <ImageView
+            android:id="@+id/ivImageProduct"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/chicken1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/tv_title_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gà rán"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tv_price_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đơn giá :"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                />
+            <TextView
+                android:id="@+id/tv_quantity_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lượng"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                />
+            <TextView
+                android:id="@+id/tv_status_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trạng thái:"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
